@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WebService</string>
+    <string name="title_activity_tabela_pokemon">TabelaPokemonActivity</string>
+</resources>

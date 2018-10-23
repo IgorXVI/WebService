@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/lb_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="48dp"
+        android:text="Nome:"
+        app:layout_constraintBottom_toBottomOf="@+id/lb_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lb_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="ID:"
+        app:layout_constraintStart_toStartOf="@+id/lb_nome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lb_experiencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiência:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_experiencia"
+        app:layout_constraintStart_toStartOf="@+id/lb_id" />
+
+    <Button
+        android:id="@+id/btn_criarPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:text="Criar Pokemon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_tabela"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tabela"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Salvar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_tabela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_tabela" />
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_id"
+        app:layout_constraintEnd_toStartOf="@+id/text_id"
+        app:layout_constraintStart_toStartOf="@+id/text_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_experiencia"
+        app:layout_constraintStart_toStartOf="@+id/text_experiencia"
+        app:layout_constraintTop_toBottomOf="@+id/lb_nome" />
+
+    <TextView
+        android:id="@+id/text_experiencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/lb_experiencia"
+        app:layout_constraintTop_toBottomOf="@+id/text_id" />
+
+    <Button
+        android:id="@+id/btn_tabela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Tabela"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_salvar"
+        app:layout_constraintStart_toEndOf="@+id/btn_criarPokemon" />
+
+</android.support.constraint.ConstraintLayout>
